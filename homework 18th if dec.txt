@@ -1,3 +1,8 @@
+Github repository:
+
+https://github.com/DanDurbaca/PhpExercises.git
+
+
 Write one single Php script that will have the following result:
 
 -	A webpage with an input box (name) and a Submit button
