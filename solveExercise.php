@@ -15,9 +15,16 @@ if (isset($_GET["name"])) {
             print " You already visited our page !<BR>";
         }
       }
+      fclose($myfile);
       if ($newUser==true)
       {
-          print "You are new to our system ! We will update our users file ...<BR>";
+        print "You are new to our system ! We will update our users file ...<BR>";
+
+        $myfile = fopen("Users.txt", "a") or die("Unable to open file!");
+        fwrite($myfile, "\n". $_GET["name"]);
+        fclose($myfile);
+        
+        print("We have added you to our list ! <BR>");
       }
 
 } else {
