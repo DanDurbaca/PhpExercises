@@ -1,0 +1,21 @@
+Write one single Php script that will have the following result:
+
+-	A webpage with an input box (name) and a Submit button
+When the user fills in his name and submits, the script restarts and does the following:
+o	Check inside a text file named ”Users.txt” if the user that is trying to login is already registered. In the Users.txt, each user is added in a new line.
+	If the user trying to login EXISTS, your script should display a WELCOME MESSAGE.
+	If the user DOES not exist in the text file – you should ADD him as the last entry. As a result your script should display a message stating – “You are new, thank you for registering”.
+-	IF the user logged in, the initial form SHOULD NO LONGER be displayed and:
+o	A new form should be available with:
+	1 select box with two options: LIKE and DISLIKE 
+	One submit button 
+When this second from is submitted, you should open a second text file named “Votes.txt”. In this file there is ONE single number stored – the number of likes. It should initially be 0. 
+If the user selected Like and submitted, you should increase this counter and save it back in the file.
+If, on the contrary – the user Disliked the page – you should decrease the counter.
+
+	Finally, add to your page, on top – the count of how many likes your page has (read the number from the file and display it)! This should be visible FOR ALL users, even the ones that did not login!
+
+	Notes
+-	Like/dislike is only available for users who DID login
+-	A logout button should also be available
+
